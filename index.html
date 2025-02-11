@@ -11,6 +11,18 @@
             --primary-color: #2563EB;
             --font-roboto:"Roboto", serif;
         }
+        .clip-custom {
+            clip-path: 
+                polygon(50% 7%, 86% 43%, 67% 84%, 32% 66%, 0% 38%);
+        }
+        .clip-junior {
+            clip-path: 
+                polygon(49% 20%, 100% 38%, 76% 80%, 26% 84%, 7% 43%);
+                -moz-clip-path: 
+                polygon(49% 20%, 100% 38%, 76% 80%, 26% 84%, 7% 43%);
+                -webkit-clip-path: 
+                polygon(49% 20%, 100% 38%, 76% 80%, 26% 84%, 7% 43%);
+        }
     </style>
 </head>
 <body>
@@ -130,32 +142,36 @@
            <img class="w-[90%] h-[90%]" src="./assets/images/Desktop.svg" alt="images menu">
        </div>
     </div>
+    <!-- rajoute la partie ici -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div class="flex flex-col gap-[3.2rem] items-center">
         <div class="flex flex-col gap-[2.4rem] flex-1">
             <h1 class="text-[4rem] font-[700] font-(--font-roboto)">Enjoy your time working</h1>
             <p class="text-[1.6rem] font-[400] font-(--font-roboto)">Etiam condimentum duis molestie malesuada volutpat pellentesque sed. Ornare suspendisse ut ac neque lobortis sed tincidunt. Mi tempus quis massa tellus imperdiet aenean nulla id.</p>
         </div class="flex-1">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <!-- application:zone avec une forme compliqué-->
         <div class="relative w-[36.1rem] h-[36.1rem] flex rounded-[50%] border-[#C084FC] border-[0.1rem] items-center justify-center">
             <div class="absolute w-[28.88rem] h-[28.88rem] flex rounded-[50%] border-[#C084FC] border-[0.1rem]"></div>
@@ -167,12 +183,25 @@
             <hr class="absolute w-[18.05rem] border-[#C084FC] border-[0.1rem] rotate-[234deg] right-[3.6rem] top-[25rem]">
             <hr class="absolute w-[18.05rem] border-[#C084FC] border-[0.1rem] rotate-[306deg] left-[3.6rem] top-[25rem]">
             <hr class="absolute w-[18.05rem] border-[#C084FC] border-[0.1rem] rotate-[18deg] right-[17.5rem] top-[15rem]">
-            <div class="absolute rounded-[50%] size-[5rem] bg-[red] flex items-center justify-center  bg-[url(./assets/images/classroom.svg)] bg-[cover] right-[33.1rem]"></div>
-            <div class="absolute rounded-[50%] size-[5rem] bg-[red] flex items-center justify-center  bg-[url(./assets/images/sgoogle.svg)] bg-[cover] right-[33.1rem]"></div>
-            <div class="absolute rounded-[50%] size-[5rem] bg-[red] flex items-center justify-center  bg-[url(./assets/images/mail.svg)] bg-[cover] right-[33.1rem]"></div>
-            <div class="absolute rounded-[50%] size-[5rem] bg-[red] flex items-center justify-center  bg-[url(./assets/images/reseau.svg)] bg-[cover] right-[33.1rem]"></div>
-            <div class="absolute rounded-[50%] size-[5rem] bg-[red] flex items-center justify-center  bg-[url(./assets/images/sgoogle.svg)] bg-[cover] right-[33.1rem]"></div>
-            <div class="absolute rounded-[50%] size-[5rem] bg-[red] flex items-center justify-center  bg-[url(./assets/images/carton.svg)] bg-[cover] right-[33.1rem]"></div>
+            <div class="absolute flex items-center justify-center">
+                <div class="relative left-[12.3rem] bottom-[3rem] border-[#9333EA] w-[26.7rem] h-[17.3rem] bg-[#D8B4FE] clip-custom"></div>
+                <div class="relative right-[13rem] border-[#9333EA] w-[24.7rem] h-[19.74rem] bg-[#D8B4FE] clip-junior"></div>
+            </div>
+            <div class="absolute rounded-[50%] size-[5rem] bg-[white] flex items-center justify-center shadow-md bg-[url(./assets/images/classroom.svg)] bg-[cover] bg-contain top-[5.1rem] left-[2.4rem]"></div>
+            <div class="absolute rounded-[50%] size-[5rem] bg-[white] flex items-center justify-center shadow-md bg-[url(./assets/images/sgoogle.svg)] bg-[cover] top-[0.4rem] left-[25rem]"></div>
+            <div class="absolute rounded-[50%] size-[2.5rem] bg-[white] flex items-center justify-center shadow-md bg-[url(./assets/images/mail.svg)] bg-[cover] top-[-0.3rem] left-[12.8rem]"></div>
+            <div class="absolute rounded-[50%] size-[2.5rem] bg-[white] flex items-center justify-center shadow-md bg-[url(./assets/images/reseau.svg)] bg-[cover] top-[20rem] left-[33rem]"></div>
+            <div class="absolute rounded-[50%] size-[2.5rem] bg-[white] flex items-center justify-center shadow-md bg-[url(./assets/images/photo.svg)] bg-[cover] top-[16.7rem] left-[-0.9rem]"></div>
+            <div class="absolute rounded-[50%] size-[5rem] bg-[white] flex items-center justify-center shadow-md bg-[url(./assets/images/carton.svg)] bg-[cover] top-[32rem] left-[9.4rem]"></div>
+            <div class="absolute rounded-[50%] size-[5rem] bg-[white] flex items-center justify-center shadow-md bg-[url(./assets/images/calendar.svg)] bg-[cover] top-[10.9rem] left-[11.7rem]"></div>
+            <div class="absolute rounded-[50%] size-[5rem] bg-[white] flex items-center justify-center shadow-md bg-[url(./assets/images/docs.svg)] bg-[cover] top-[22.3rem] left-[15.2 rem] "></div>
+            <div class="absolute rounded-[50%] size-[5rem] bg-[white] flex items-center justify-center shadow-md bg-[url(./assets/images/drive.svg)] bg-[cover] top-[29.4rem] left-[20.3rem]"></div>
+            <div class="absolute rounded-[50%] size-[2.5rem] bg-[white] flex items-center justify-center shadow-md bg-[url(./assets/images/fleche.svg)] bg-[cover] top-[25.2rem] left-[28.6rem]"></div>
+            <div class="absolute rounded-[50%] size-[5rem] bg-[white] flex items-center justify-center shadow-md bg-[url(./assets/images/infinite.svg)] bg-[cover] top-[12.3rem] left-[29.8rem]"></div>
+            <div class="absolute rounded-[50%] size-[5rem] bg-[white] flex items-center justify-center shadow-md bg-[url(./assets/images/mask.svg)] bg-[cover] top-[22.2rem] left-[3.7rem]"></div>
+            <div class="absolute rounded-[50%] size-[2.5rem] bg-[white] flex items-center justify-center shadow-md bg-[url(./assets/images/tempest.svg)] bg-[cover] top-[3.8rem] left-[10.6rem]"></div>
+            <div class="absolute rounded-[50%] size-[2.5rem] bg-[white] flex items-center justify-center shadow-md bg-[url(./assets/images/tik.svg)] bg-[cover] top-[7.1rem] left-[28.1rem]"></div>
+            <div class="absolute rounded-[50%] size-[5rem] bg-[white] flex items-center justify-center shadow-md bg-[url(./assets/images/tof.svg)] bg-[cover] top-[6rem] left-[20rem]"></div>
         
 
         </div>
